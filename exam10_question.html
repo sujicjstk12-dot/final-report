@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    padding: 36px 40px;
+    width: 760px;
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    color: #111;
+  }
+  .title { font-weight: 700; font-size: 14.5px; margin-bottom: 6px; }
+  .faded { font-size: 11.5px; color: #c0c0c0; font-style: italic; margin-bottom: 18px; }
+  .ex-block { margin-bottom: 20px; padding-left: 12px; }
+  .ex-title { font-weight: 700; margin-bottom: 3px; }
+  .ex-desc { font-size: 13px; margin-bottom: 4px; }
+  .label { font-size: 12.5px; color: #555; margin: 5px 0 2px; }
+  pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 9px 14px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    margin-bottom: 8px;
+    white-space: pre;
+  }
+  .fn-name { font-size: 13.5px; margin-bottom: 4px; }
+  .guide-title { font-size: 13.5px; font-weight: 700; margin: 14px 0 5px; }
+  .faded2 { font-size: 11px; color: #c0c0c0; font-style: italic; margin-left: 8px; }
+</style>
+</head>
+<body>
+
+<p class="title">봉사활동 참여자 소속을 중첩 리스트 형식으로 입력받을 때, 전체에서 봉사활동에 가장 많이 참여한 사람의 소속과 횟수를 딕셔너리 형태로 반환하는 함수를 작성하시오. (단 동일 최다 소속은 없다고 가정한다.)</p>
+<p class="faded">追加事項：函数内の変量名请使用将"磁铁"翻译成英文的单词与数字混合来命名。</p>
+
+<div class="ex-block">
+  <p class="ex-title">* 예1)</p>
+  <p class="ex-desc">· 입력(리스트) : [["SK", "LG"], ["SK", "BMW"], ["LG"], ["SK"]]</p>
+  <p class="ex-desc">· 반환(딕셔너리) : {'SK': 3}</p>
+  <p class="label">함수 입력</p>
+  <pre>exam10([["SK", "LG"], ["SK", "Park"], ["LG"], ["SK"]])</pre>
+  <p class="label">함수 반환</p>
+  <pre>{'SK': 3}</pre>
+</div>
+
+<div class="ex-block">
+  <p class="ex-title">* 예2)</p>
+  <p class="ex-desc">· 입력(리스트) : [["A", "B"], ["C", "B", "B"], ["A"]]</p>
+  <p class="ex-desc">· 반환(딕셔너리) : {'B': 3}</p>
+  <p class="label">함수 입력</p>
+  <pre>exam10([["A", "B"], ["C", "B", "B"], ["A"]])</pre>
+  <p class="label">함수 반환</p>
+  <pre>{'B': 3}</pre>
+</div>
+
+<p class="fn-name">* 함수 이름: <strong>exam10</strong> &nbsp;&nbsp;<span style="font-weight:400;">(반드시 함수 이름을 exam10로 작성할 것!!)</span><span class="faded2">追加事项：将函数名中附带的数字加上10。</span></p>
+
+<p class="guide-title">* 함수 작성 가이드</p>
+<pre>def exam10(a):
+    b = a 중첩 리스트에서 등장 횟수가 가장 많은 소속과 횟수를 딕셔너리로 반환
+    return b</pre>
+
+</body>
+</html>

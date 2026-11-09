@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fff;
+    padding: 36px 40px;
+    width: 760px;
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    color: #111;
+  }
+  .title { font-weight: 700; font-size: 14.5px; margin-bottom: 6px; }
+  .rules { font-size: 13.5px; margin-bottom: 6px; padding-left: 16px; }
+  .rules li { margin-bottom: 2px; list-style: disc; }
+  .faded { font-size: 11.5px; color: #c0c0c0; font-style: italic; margin-bottom: 18px; margin-top: 6px; }
+  .ex-block { margin-bottom: 20px; padding-left: 12px; }
+  .ex-title { font-weight: 700; margin-bottom: 3px; }
+  .ex-desc { font-size: 13px; margin-bottom: 4px; }
+  .label { font-size: 12.5px; color: #555; margin: 5px 0 2px; }
+  pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 9px 14px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 13px;
+    margin-bottom: 8px;
+    white-space: pre;
+  }
+  .fn-name { font-size: 13.5px; margin-bottom: 4px; }
+  .guide-title { font-size: 13.5px; font-weight: 700; margin: 14px 0 5px; }
+  .faded2 { font-size: 11px; color: #c0c0c0; font-style: italic; margin-left: 8px; }
+</style>
+</head>
+<body>
+
+<p class="title">소문자로 이루어진 문자열을 입력받아, 가장 많이 등장한 문자와 두 번째로 많이 등장한 문자를 등장 횟수와 함께 딕셔너리 형태로 반환하는 함수를 작성하시오.</p>
+<ul class="rules">
+  <li>문자열에서 가장 많이 등장하는 문자와 두 번째로 많이 등장하는 문자를 찾아 그 문자와 등장횟수를 딕셔너리로 만든다.</li>
+  <li>두 개의 딕셔너리를 담은 리스트를 함수로 반환한다.</li>
+  <li>단 문자열의 등장횟수가 서로 같을 때는, 먼저 등장한 문자를 우선하여 반환한다.</li>
+  <li>입력되는 모든 문자열은 소문자로 가정한다.</li>
+</ul>
+<p class="faded">追加事項：函数内の変量名请使用将"磁铁"翻译成英文的单词与数字混合来命名。</p>
+
+<div class="ex-block">
+  <p class="ex-title">* 예1)</p>
+  <p class="ex-desc">· 입력(문자열) : "mississippi"</p>
+  <p class="ex-desc">· 반환(리스트) : [{'i': 4}, {'s': 4}]</p>
+  <p class="label">함수 입력</p>
+  <pre>exam9("mississippi")</pre>
+  <p class="label">함수 반환</p>
+  <pre>[{'i': 4}, {'s': 4}]</pre>
+</div>
+
+<div class="ex-block">
+  <p class="ex-title">* 예2)</p>
+  <p class="ex-desc">· 입력(문자열) : "arrangement"</p>
+  <p class="ex-desc">· 반환(리스트) : [{'a': 2}, {'r': 2}]</p>
+  <p class="label">함수 입력</p>
+  <pre>exam9("arrangement")</pre>
+  <p class="label">함수 반환</p>
+  <pre>[{'a': 2}, {'r': 2}]</pre>
+</div>
+
+<div class="ex-block">
+  <p class="ex-title">* 예3)</p>
+  <p class="ex-desc">· 입력(문자열) : "aaabbc"</p>
+  <p class="ex-desc">· 반환(리스트) : [{'a': 3}, {'b': 2}]</p>
+  <p class="label">함수 입력</p>
+  <pre>exam9("aaabbc")</pre>
+  <p class="label">함수 반환</p>
+  <pre>[{'a': 3}, {'b': 2}]</pre>
+</div>
+
+<p class="fn-name">* 함수 이름: <strong>exam9</strong> &nbsp;&nbsp;<span style="font-weight:400;">(반드시 함수 이름을 exam9로 작성할 것!!)</span><span class="faded2">追加事项：将函数名中附带的数字加上10。</span></p>
+
+<p class="guide-title">* 함수 작성 가이드</p>
+<pre>def exam9(a):
+    b = a 문자열에서 첫번째로 많이 등장한 문자와 두번째로 등장한 문자와 등장횟수를 딕셔너리로 저장한 리스트
+    return b</pre>
+
+</body>
+</html>
